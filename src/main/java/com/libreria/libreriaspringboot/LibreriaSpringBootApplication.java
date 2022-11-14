@@ -15,15 +15,8 @@ public class LibreriaSpringBootApplication implements CommandLineRunner{
 		SpringApplication.run(LibreriaSpringBootApplication.class, args);
 	}
 
-	@Autowired
-	private AutorRepository repository;
-
 	@Override
 	public void run(String... args) throws Exception {
-		Autor autor = new Autor();
-		autor.setNombre("Antonio Banderas");
-		autor.setPais("Rusia");
-		repository.save(autor);
-	}
 
+	}
 }
