@@ -19,4 +19,9 @@ public class AutorServiceImp  implements AutorService{
     public List<Autor> listarAutores() {
         return repository.findAll();
     }
+
+    @Override
+    public Autor guardarAutor(Autor autor) {
+        return repository.save(autor);
+    }
 }

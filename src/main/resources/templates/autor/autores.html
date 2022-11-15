@@ -8,6 +8,27 @@
 </head>
 <body>
     <nav th:replace="base :: nav"></nav>
+
+    <div class="container">
+        <h2>Lista de autores</h2>
+        <br/>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>País</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="autor: ${autores}">
+                    <td th:text="${autor.idAutor}"></td>
+                    <td th:text="${autor.nombre}"></td>
+                    <td th:text="${autor.pais}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
 

@@ -7,4 +7,6 @@ import com.libreria.libreriaspringboot.Model.Autor;
 public interface AutorService {
     
     public List<Autor> listarAutores();
+
+    public Autor guardarAutor(Autor autor);
 }
